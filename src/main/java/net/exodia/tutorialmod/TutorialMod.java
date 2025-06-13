@@ -2,6 +2,7 @@ package net.exodia.tutorialmod;
 
 import com.mojang.logging.LogUtils;
 import net.exodia.tutorialmod.block.ModBlocks;
+import net.exodia.tutorialmod.item.ModCreativeModeTabs;
 import net.exodia.tutorialmod.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
@@ -50,6 +51,8 @@ public class TutorialMod
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
