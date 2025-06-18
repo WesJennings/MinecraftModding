@@ -1,7 +1,9 @@
 package net.exodia.tutorialmod.item.custom;
 
 import net.exodia.tutorialmod.block.ModBlocks;
+import net.exodia.tutorialmod.component.ModDataComponentTypes;
 import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
@@ -54,6 +56,8 @@ public class ChiselItem extends Item {
 
                 level.playSound(null, pContext.getClickedPos(), SoundEvents.GRINDSTONE_USE, SoundSource.BLOCKS);
 
+                pContext.getItemInHand().set(ModDataComponentTypes.COORDINATES.get(), pContext.getClickedPos());
+                //pContext.getItemInHand().set(DataComponents.RARITY, pContext.getItemInHand().getRarity());
             }
         }
 
@@ -71,6 +75,9 @@ public class ChiselItem extends Item {
             pTooltipComponents.add(Component.translatable("tooltip.tutorialmod.chisel"));
         }
 
+        if(pStack.get(ModDataComponentTypes.COORDINATES.get()) != null){
+            pTooltipComponents.add(Component.literal("Last Block changed at " + pStack.get(ModDataComponentTypes.COORDINATES.get())));
+        }
 
         super.appendHoverText(pStack, pContext, pTooltipComponents, pTooltipFlag);
     }

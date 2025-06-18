@@ -1,9 +1,18 @@
 {
   "item.tutorialmod.alexandrite": "Alexandrite Gem",
   "item.tutorialmod.raw_alexandrite": "Raw Alexandrite",
+
   "item.tutorialmod.chisel": "Chisel",
   "item.tutorialmod.kohlrabi": "Kohlrabi",
   "item.tutorialmod.aurora_ashes": "Aurora Ashes",
+
+  "item.tutorialmod.alexandrite_sword": "Alexandrite Sword",
+  "item.tutorialmod.alexandrite_pickaxe": "Alexandrite Pickaxe",
+  "item.tutorialmod.alexandrite_shovel": "Alexandrite Shovel",
+  "item.tutorialmod.alexandrite_axe": "Alexandrite Axe",
+  "item.tutorialmod.alexandrite_hoe": "Alexandrite Hoe",
+
+  "item.tutorialmod.alexandrite_hammer": "Alexandrite Hammer",
 
 
   "block.tutorialmod.alexandrite_block": "Block of Alexandrite",
