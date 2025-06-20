@@ -34,6 +34,13 @@ public class ModCreativeModeTabs {
                                 output.accept(ModItems.ALEXANDRITE_AXE.get());
                                 output.accept(ModItems.ALEXANDRITE_HOE.get());
                                 output.accept(ModItems.ALEXANDRITE_HAMMER.get());
+
+                                output.accept(ModItems.ALEXANDRITE_BOOTS.get());
+                                output.accept(ModItems.ALEXANDRITE_LEGGINGS.get());
+                                output.accept(ModItems.ALEXANDRITE_CHESTPLATE.get());
+                                output.accept(ModItems.ALEXANDRITE_HELMET.get());
+
+                                output.accept(ModItems.ALEXANDRITE_HORSE_ARMOR.get());
                             }).build());
 
     static final RegistryObject<CreativeModeTab> ALEXANDRITE_BLOCKS_TAB =
