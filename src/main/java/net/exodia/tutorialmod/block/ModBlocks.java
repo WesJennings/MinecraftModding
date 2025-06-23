@@ -30,6 +30,10 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(3f).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> TURA_LIMESTONE = registerBlock("tura_limestone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2.5f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
     public static final RegistryObject<Block> ALEXANDRITE_ORE = registerBlock("alexandrite_ore",
             () -> new DropExperienceBlock(UniformInt.of(2,4),BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops()));

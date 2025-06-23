@@ -2,6 +2,7 @@
   "values": [
     "tutorialmod:raw_alexandrite_block",
     "minecraft:obsidian",
+    "tutorialmod:tura_limestone",
     "#minecraft:needs_iron_tool"
   ]
 }

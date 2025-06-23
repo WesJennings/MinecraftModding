@@ -71,6 +71,7 @@ public class ModCreativeModeTabs {
 
                                 output.accept(ModBlocks.ALEXANDRITE_LAMP.get());
 
+                                output.accept(ModBlocks.TURA_LIMESTONE.get());
 
                             }).build());
 
