@@ -3,6 +3,7 @@
     "tutorialmod:raw_alexandrite_block",
     "minecraft:obsidian",
     "tutorialmod:tura_limestone",
+    "tutorialmod:pyramidion",
     "#minecraft:needs_iron_tool"
   ]
 }

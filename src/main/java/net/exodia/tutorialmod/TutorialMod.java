@@ -2,6 +2,7 @@ package net.exodia.tutorialmod;
 
 import com.mojang.logging.LogUtils;
 import net.exodia.tutorialmod.block.ModBlocks;
+import net.exodia.tutorialmod.block.entity.ModBlockEntities;
 import net.exodia.tutorialmod.component.ModDataComponentTypes;
 import net.exodia.tutorialmod.item.ModCreativeModeTabs;
 import net.exodia.tutorialmod.item.ModItems;
@@ -59,6 +60,8 @@ public class TutorialMod
         ModBlocks.register(modEventBus);
 
         ModDataComponentTypes.register(modEventBus);
+
+        ModBlockEntities.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

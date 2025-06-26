@@ -4,6 +4,7 @@ import com.mojang.blaze3d.shaders.Uniform;
 import net.exodia.tutorialmod.TutorialMod;
 import net.exodia.tutorialmod.block.custom.AlexandriteLampBlock;
 import net.exodia.tutorialmod.block.custom.MagicBlock;
+import net.exodia.tutorialmod.block.custom.PedestalBlock;
 import net.exodia.tutorialmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -33,6 +34,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> TURA_LIMESTONE = registerBlock("tura_limestone",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2.5f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final RegistryObject<Block> PYRAMIDION = registerBlock("pyramidion",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
 
     public static final RegistryObject<Block> ALEXANDRITE_ORE = registerBlock("alexandrite_ore",
             () -> new DropExperienceBlock(UniformInt.of(2,4),BlockBehaviour.Properties.of()
@@ -72,11 +77,14 @@ public class ModBlocks {
             () -> new AlexandriteLampBlock(BlockBehaviour.Properties.of().strength(3f)
                     .lightLevel(state -> state.getValue(AlexandriteLampBlock.CLICKED) ? 15 : 0)));
 
-    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
-        RegistryObject<T> toReturn = BLOCKS.register(name, block);
-        registerBlockItem(name, toReturn);
-        return toReturn;
-    }
+        public static final RegistryObject<Block> PEDESTAL = registerBlock("pedestal",
+                () -> new PedestalBlock(BlockBehaviour.Properties.of().noOcclusion()));
+
+        private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
+                RegistryObject<T> toReturn = BLOCKS.register(name, block);
+                registerBlockItem(name, toReturn);
+                return toReturn;
+        }
 
     private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));

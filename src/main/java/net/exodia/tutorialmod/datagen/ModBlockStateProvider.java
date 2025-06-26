@@ -26,6 +26,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.RAW_ALEXANDRITE_BLOCK);
         blockWithItem(ModBlocks.TURA_LIMESTONE);
 
+        blockWithItem(ModBlocks.PYRAMIDION);
+
         blockWithItem(ModBlocks.ALEXANDRITE_ORE);
         blockWithItem(ModBlocks.ALEXANDRITE_DEEPSLATE_ORE);
 

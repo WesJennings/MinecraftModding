@@ -73,6 +73,10 @@ public class ModCreativeModeTabs {
 
                                 output.accept(ModBlocks.TURA_LIMESTONE.get());
 
+                                output.accept(ModBlocks.PYRAMIDION.get());
+
+                                output.accept(ModBlocks.PEDESTAL.get());
+
                             }).build());
 
     public static void register(IEventBus eventBus) {

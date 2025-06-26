@@ -27,13 +27,15 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.RAW_ALEXANDRITE_BLOCK.get())
                 .add(ModBlocks.ALEXANDRITE_DEEPSLATE_ORE.get())
                 .add(ModBlocks.MAGIC_BLOCK.get())
-                .add(ModBlocks.TURA_LIMESTONE.get());
+                .add(ModBlocks.TURA_LIMESTONE.get())
+                .add(ModBlocks.PYRAMIDION.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.ALEXANDRITE_DEEPSLATE_ORE.get());
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.RAW_ALEXANDRITE_BLOCK.get());
+                .add(ModBlocks.RAW_ALEXANDRITE_BLOCK.get())
+                .add(ModBlocks.PYRAMIDION.get());
 
         tag(BlockTags.FENCES).add(ModBlocks.ALEXANDRITE_FENCE.get());
         tag(BlockTags.FENCE_GATES).add(ModBlocks.ALEXANDRITE_FENCE_GATE.get());
@@ -44,6 +46,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.RAW_ALEXANDRITE_BLOCK.get())
                 .add(Blocks.OBSIDIAN)
                 .add(ModBlocks.TURA_LIMESTONE.get())
+                .add(ModBlocks.PYRAMIDION.get())
                 .addTag(BlockTags.NEEDS_IRON_TOOL);
 
         tag(ModTags.Blocks.INCORRECT_FOR_ALEXANDRITE_TOOL)
