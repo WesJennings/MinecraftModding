@@ -3,6 +3,7 @@ package net.exodia.tutorialmod.block;
 import com.mojang.blaze3d.shaders.Uniform;
 import net.exodia.tutorialmod.TutorialMod;
 import net.exodia.tutorialmod.block.custom.AlexandriteLampBlock;
+import net.exodia.tutorialmod.block.custom.GrowthChamberBlock;
 import net.exodia.tutorialmod.block.custom.MagicBlock;
 import net.exodia.tutorialmod.block.custom.PedestalBlock;
 import net.exodia.tutorialmod.item.ModItems;
@@ -45,6 +46,12 @@ public class ModBlocks {
     public static final RegistryObject<Block> ALEXANDRITE_DEEPSLATE_ORE = registerBlock("alexandrite_deepslate_ore",
             () -> new DropExperienceBlock(UniformInt.of(3,6), BlockBehaviour.Properties.of()
                     .strength(5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+    public static final RegistryObject<Block> ALEXANDRITE_END_ORE = registerBlock("alexandrite_end_ore",
+            () -> new DropExperienceBlock(UniformInt.of(5, 9),
+                    BlockBehaviour.Properties.of().strength(7f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ALEXANDRITE_NETHER_ORE = registerBlock("alexandrite_nether_ore",
+            () -> new DropExperienceBlock(UniformInt.of(1, 5),
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> MAGIC_BLOCK = registerBlock("magic_block",
             () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noLootTable()));
@@ -79,6 +86,9 @@ public class ModBlocks {
 
         public static final RegistryObject<Block> PEDESTAL = registerBlock("pedestal",
                 () -> new PedestalBlock(BlockBehaviour.Properties.of().noOcclusion()));
+
+    public static final RegistryObject<Block> GROWTH_CHAMBER = registerBlock("growth_chamber",
+            () -> new GrowthChamberBlock(BlockBehaviour.Properties.of()));
 
         private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
                 RegistryObject<T> toReturn = BLOCKS.register(name, block);

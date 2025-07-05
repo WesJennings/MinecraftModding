@@ -26,6 +26,8 @@
   "block.tutorialmod.raw_alexandrite_block": "Block of Raw Alexandrite",
   "block.tutorialmod.alexandrite_ore": "Alexandrite Ore",
   "block.tutorialmod.alexandrite_deepslate_ore": "Alexandrite Deepslate Ore",
+  "block.tutorialmod.alexandrite_end_ore": "Alexandrite End Ore",
+  "block.tutorialmod.alexandrite_nether_ore": "Alexandrite Nether Ore",
   "block.tutorialmod.magic_block": "Magic Block",
   "block.tutorialmod.tura_limestone": "Tura Limestone",
   "block.tutorialmod.pyramidion": "Pyramidion",
@@ -46,6 +48,7 @@
   "block.tutorialmod.alexandrite_lamp": "Alexandrite Lamp",
 
   "block.tutorialmod.pedestal": "Pedestal",
+  "block.tutorialmod.growth_chamber": "Growth Chamber",
 
   "creativetab.tutorialmod.alexandrite_items": "Alexandrite Items",
   "creativetab.tutorialmod.alexandrite_blocks": "Alexandrite Blocks",

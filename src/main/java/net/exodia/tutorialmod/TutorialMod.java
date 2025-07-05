@@ -3,10 +3,16 @@ package net.exodia.tutorialmod;
 import com.mojang.logging.LogUtils;
 import net.exodia.tutorialmod.block.ModBlocks;
 import net.exodia.tutorialmod.block.entity.ModBlockEntities;
+import net.exodia.tutorialmod.block.entity.renderer.PedestalBlockEntityRenderer;
 import net.exodia.tutorialmod.component.ModDataComponentTypes;
 import net.exodia.tutorialmod.item.ModCreativeModeTabs;
 import net.exodia.tutorialmod.item.ModItems;
+import net.exodia.tutorialmod.screen.ModMenuTypes;
+import net.exodia.tutorialmod.screen.custom.GrowthChamberScreen;
+import net.exodia.tutorialmod.screen.custom.PedestalScreen;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
@@ -18,6 +24,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -63,6 +70,8 @@ public class TutorialMod
 
         ModBlockEntities.register(modEventBus);
 
+        ModMenuTypes.register(modEventBus); 
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -104,7 +113,14 @@ public class TutorialMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
+            MenuScreens.register(ModMenuTypes.PEDESTAL_MENU.get(), PedestalScreen::new);
 
+            MenuScreens.register(ModMenuTypes.GROWTH_CHAMBER_MENU.get(), GrowthChamberScreen::new);
+        }
+
+        @SubscribeEvent
+        public static void registerBER(EntityRenderersEvent.RegisterRenderers event) {
+            event.registerBlockEntityRenderer(ModBlockEntities.PEDESTAL_BE.get(), PedestalBlockEntityRenderer::new);
         }
     }
 }

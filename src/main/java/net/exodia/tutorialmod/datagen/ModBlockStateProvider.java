@@ -30,6 +30,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(ModBlocks.ALEXANDRITE_ORE);
         blockWithItem(ModBlocks.ALEXANDRITE_DEEPSLATE_ORE);
+        blockWithItem(ModBlocks.ALEXANDRITE_END_ORE);
+        blockWithItem(ModBlocks.ALEXANDRITE_NETHER_ORE);
 
         blockWithItem(ModBlocks.MAGIC_BLOCK);
 
@@ -51,6 +53,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.ALEXANDRITE_PRESSURE_PLATE);
         blockItem(ModBlocks.ALEXANDRITE_FENCE_GATE);
         blockItem(ModBlocks.ALEXANDRITE_TRAPDOOR, "_bottom");
+
+        blockWithItem(ModBlocks.GROWTH_CHAMBER);
 
         customLamp();
     }
