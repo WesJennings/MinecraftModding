@@ -2,10 +2,7 @@ package net.exodia.tutorialmod.block;
 
 import com.mojang.blaze3d.shaders.Uniform;
 import net.exodia.tutorialmod.TutorialMod;
-import net.exodia.tutorialmod.block.custom.AlexandriteLampBlock;
-import net.exodia.tutorialmod.block.custom.GrowthChamberBlock;
-import net.exodia.tutorialmod.block.custom.MagicBlock;
-import net.exodia.tutorialmod.block.custom.PedestalBlock;
+import net.exodia.tutorialmod.block.custom.*;
 import net.exodia.tutorialmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -91,14 +88,19 @@ public class ModBlocks {
             () -> new GrowthChamberBlock(BlockBehaviour.Properties.of()));
 
         private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
-                RegistryObject<T> toReturn = BLOCKS.register(name, block);
-                registerBlockItem(name, toReturn);
-                return toReturn;
+            RegistryObject<T> toReturn = BLOCKS.register(name, block);
+            registerBlockItem(name, toReturn);
+            return toReturn;
         }
 
-    private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
+        public static final RegistryObject<Block> KOHLRABI_CROP = BLOCKS.register("kohlrabi_crop",
+            () -> new KohlrabiCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
+
+
+        private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
+
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

@@ -7,6 +7,7 @@ import net.exodia.tutorialmod.block.entity.renderer.PedestalBlockEntityRenderer;
 import net.exodia.tutorialmod.component.ModDataComponentTypes;
 import net.exodia.tutorialmod.item.ModCreativeModeTabs;
 import net.exodia.tutorialmod.item.ModItems;
+import net.exodia.tutorialmod.recipe.ModRecipes;
 import net.exodia.tutorialmod.screen.ModMenuTypes;
 import net.exodia.tutorialmod.screen.custom.GrowthChamberScreen;
 import net.exodia.tutorialmod.screen.custom.PedestalScreen;
@@ -21,6 +22,7 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.api.distmarker.Dist;
@@ -70,7 +72,9 @@ public class TutorialMod
 
         ModBlockEntities.register(modEventBus);
 
-        ModMenuTypes.register(modEventBus); 
+        ModMenuTypes.register(modEventBus);
+
+        ModRecipes.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -81,7 +85,10 @@ public class TutorialMod
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-
+        event.enqueueWork(() -> {
+            ComposterBlock.COMPOSTABLES.put(ModItems.KOHLRABI.get(), 0.4f);
+            ComposterBlock.COMPOSTABLES.put(ModItems.KOHLRABI_SEEDS.get(), 0.15f);
+        });
     }
 
     // Add the example block item to the building blocks tab

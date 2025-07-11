@@ -1,6 +1,7 @@
 package net.exodia.tutorialmod.item;
 
 import net.exodia.tutorialmod.TutorialMod;
+import net.exodia.tutorialmod.block.ModBlocks;
 import net.exodia.tutorialmod.item.custom.*;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
@@ -72,6 +73,9 @@ public class ModItems {
     public static final RegistryObject<Item> ALEXANDRITE_HORSE_ARMOR = ITEMS.register("alexandrite_horse_armor",
             () ->  new AnimalArmorItem(ModArmorMaterials.ALEXANDRITE_ARMOR_MATERIAL, AnimalArmorItem.BodyType.EQUESTRIAN,
                     false, new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> KOHLRABI_SEEDS = ITEMS.register("kohlrabi_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.KOHLRABI_CROP.get(), new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

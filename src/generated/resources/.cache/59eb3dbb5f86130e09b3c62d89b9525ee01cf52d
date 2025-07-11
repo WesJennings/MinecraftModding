@@ -1,4 +1,4 @@
-// 1.21.1	2025-07-05T14:11:04.1921529	Loot Tables
+// 1.21.1	2025-07-11T15:24:34.6705326	Loot Tables
 082d4a4dfab54d4b7c02bf12577180f310c2d578 data/tutorialmod/loot_table/blocks/alexandrite_block.json
 46e710e38ef1ab93beb058251930a04c2cbddd5f data/tutorialmod/loot_table/blocks/alexandrite_button.json
 f7b3ea3062e84cdb440921da78ef9b4e238b3c06 data/tutorialmod/loot_table/blocks/alexandrite_deepslate_ore.json
@@ -15,6 +15,7 @@ de6ba9ec151941ccebacc14bac881676f4c6bc0c data/tutorialmod/loot_table/blocks/alex
 02cfd02eadfa7df2c31c900ae837e324bff75ded data/tutorialmod/loot_table/blocks/alexandrite_trapdoor.json
 31070ef777bbb4e9bfa7948918cd4ea4f1b40351 data/tutorialmod/loot_table/blocks/alexandrite_wall.json
 4f1efb8da89a2838693b6df2a685fabebdd44d2b data/tutorialmod/loot_table/blocks/growth_chamber.json
+34ce942e7c28bc359a9f2aedc4c7a6eab2ba7248 data/tutorialmod/loot_table/blocks/kohlrabi_crop.json
 f86699c8dc14a6860f20848e86fb53f071baf9d5 data/tutorialmod/loot_table/blocks/pedestal.json
 1d1ad7068329c48ac5a8b5888ea259617ecfe5d8 data/tutorialmod/loot_table/blocks/pyramidion.json
 b019cac2fb4f4c4c0aca6b3a0ae079a8e6d74f56 data/tutorialmod/loot_table/blocks/raw_alexandrite_block.json

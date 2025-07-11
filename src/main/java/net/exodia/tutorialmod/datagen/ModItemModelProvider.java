@@ -71,6 +71,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.ALEXANDRITE_BOOTS);
 
         basicItem(ModItems.ALEXANDRITE_HORSE_ARMOR.get());
+
+        basicItem(ModItems.KOHLRABI_SEEDS.get());
     }
 
     // Shoutout to El_Redstoniano for making this
