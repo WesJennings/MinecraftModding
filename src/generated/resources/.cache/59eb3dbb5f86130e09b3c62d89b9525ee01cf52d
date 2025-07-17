@@ -1,4 +1,4 @@
-// 1.21.1	2025-07-11T15:24:34.6705326	Loot Tables
+// 1.21.1	2025-07-17T17:00:45.6400538	Loot Tables
 082d4a4dfab54d4b7c02bf12577180f310c2d578 data/tutorialmod/loot_table/blocks/alexandrite_block.json
 46e710e38ef1ab93beb058251930a04c2cbddd5f data/tutorialmod/loot_table/blocks/alexandrite_button.json
 f7b3ea3062e84cdb440921da78ef9b4e238b3c06 data/tutorialmod/loot_table/blocks/alexandrite_deepslate_ore.json
@@ -19,4 +19,11 @@ de6ba9ec151941ccebacc14bac881676f4c6bc0c data/tutorialmod/loot_table/blocks/alex
 f86699c8dc14a6860f20848e86fb53f071baf9d5 data/tutorialmod/loot_table/blocks/pedestal.json
 1d1ad7068329c48ac5a8b5888ea259617ecfe5d8 data/tutorialmod/loot_table/blocks/pyramidion.json
 b019cac2fb4f4c4c0aca6b3a0ae079a8e6d74f56 data/tutorialmod/loot_table/blocks/raw_alexandrite_block.json
+6d329830a7ca80c19072cbc06165e2e127ba1e4d data/tutorialmod/loot_table/blocks/stripped_walnut_log.json
+68ddca79c951a25133b15d68c0b0f45c4b5b9caf data/tutorialmod/loot_table/blocks/stripped_walnut_wood.json
 4c5820b8a17eaf5794c26fe782e8ac619a6aa853 data/tutorialmod/loot_table/blocks/tura_limestone.json
+bf3f7da9c0b3c6e747cd07b7bb7ac22b0ca06e55 data/tutorialmod/loot_table/blocks/walnut_leaves.json
+efbde07e205cace86f6092f006c11c93965052c9 data/tutorialmod/loot_table/blocks/walnut_log.json
+a662793e174399074ef7ac9b3e3c813dde43d632 data/tutorialmod/loot_table/blocks/walnut_planks.json
+90c730197333157c61207395aa11ecf37b44b1f9 data/tutorialmod/loot_table/blocks/walnut_sapling.json
+d989d4f93d11de10d78b6d44b396374298927aa8 data/tutorialmod/loot_table/blocks/walnut_wood.json

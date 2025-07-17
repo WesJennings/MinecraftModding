@@ -81,6 +81,16 @@ public class ModCreativeModeTabs {
 
                                 output.accept((ModBlocks.GROWTH_CHAMBER.get()));
 
+                                output.accept(ModBlocks.WALNUT_LOG.get());
+                                output.accept(ModBlocks.WALNUT_WOOD.get());
+                                output.accept(ModBlocks.STRIPPED_WALNUT_LOG.get());
+                                output.accept(ModBlocks.STRIPPED_WALNUT_WOOD.get());
+
+                                output.accept(ModBlocks.WALNUT_PLANKS.get());
+                                output.accept(ModBlocks.WALNUT_SAPLING.get());
+
+                                output.accept(ModBlocks.WALNUT_LEAVES.get());
+
                             }).build());
 
     public static void register(IEventBus eventBus) {
